@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#081a3b">
+  <meta name="description" content="Jasiel Sarahi te invita a celebrar sus XV años.">
+  <title>Jasiel Sarahi | Mis XV años</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <canvas id="sparkles" aria-hidden="true"></canvas>
+
+  <main class="invitation">
+    <section class="panel cover" id="inicio">
+      <div class="cover-halo"></div>
+      <div class="corner-ornament top-left">✧</div><div class="corner-ornament top-right">✧</div>
+      <div class="cover-content reveal">
+        <p class="micro-heading">UNA NOCHE · UN RECUERDO PARA SIEMPRE</p>
+        <div class="thin-rule"><span>✦</span></div>
+        <p class="script small-script">Mis</p>
+        <h1 class="cover-title">XV Años</h1>
+        <div class="crown-mark" aria-hidden="true">
+          <svg viewBox="0 0 180 110"><defs><linearGradient id="chrome" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#8794a9"/><stop offset=".32" stop-color="#fff"/><stop offset=".58" stop-color="#aab6c8"/><stop offset=".8" stop-color="#f8fafc"/><stop offset="1" stop-color="#7e8da5"/></linearGradient></defs><path d="M25 76 12 31l39 24L89 10l40 45 39-24-14 45Z" fill="none" stroke="url(#chrome)" stroke-width="5" stroke-linejoin="round"/><path d="M28 84h126v12H28z" fill="url(#chrome)"/><circle cx="12" cy="31" r="5" fill="#e8edf4"/><circle cx="89" cy="10" r="6" fill="#fff"/><circle cx="168" cy="31" r="5" fill="#e8edf4"/></svg>
+        </div>
+        <p class="script heroine-name">Jasiel Sarahi</p>
+        <p class="surname">VELÁSQUEZ GUTIÉRREZ</p>
+        <div class="date-lockup"><span>SÁBADO</span><b>19</b><span>DICIEMBRE<br>2026</span></div>
+        <p class="time-line">SEIS DE LA TARDE</p>
+        <div class="countdown" aria-label="Cuenta regresiva">
+          <div><strong id="days">00</strong><small>DÍAS</small></div><i></i>
+          <div><strong id="hours">00</strong><small>HORAS</small></div><i></i>
+          <div><strong id="minutes">00</strong><small>MINUTOS</small></div><i></i>
+          <div><strong id="seconds">00</strong><small>SEGUNDOS</small></div>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#bienvenida">DESLIZA PARA DESCUBRIR <span>↓</span></a>
+    </section>
+
+    <section class="panel welcome" id="bienvenida">
+      <div class="section-index"><span>BIENVENIDA</span></div>
+      <div class="section-content reveal">
+        <p class="eyebrow">UN DÍA QUE SOÑÉ</p>
+        <h2 class="display-title">Hay momentos<br>que se vuelven <em>eternos.</em></h2>
+        <p class="paragraph">Hay días que se convierten en recuerdos inolvidables, momentos que queremos guardar para siempre y personas que hacen nuestra vida más especial.</p>
+        <p class="paragraph">Por eso quiero que estés conmigo en esta noche tan importante y compartas la alegría de celebrar una nueva etapa de mi vida...</p>
+        <div class="signature-line"><span>Con cariño,</span><b>Jasiel Sarahi</b></div>
+      </div>
+      <div class="side-flourish" aria-hidden="true">✧</div>
+    </section>
+
+    <section class="panel parents" id="padres">
+      <div class="section-index"><span>CON LA BENDICIÓN DE DIOS</span></div>
+      <div class="section-content reveal">
+        <p class="eyebrow">MI FAMILIA</p>
+        <h2 class="script-heading">Mis padres</h2>
+        <p class="paragraph narrow">Con el amor y la bendición de las personas que han sido parte fundamental de mi historia.</p>
+        <div class="parent-names">
+          <div class="parent-name-block"><span>MI PADRE</span><p>Julio César<br>Velásquez Flores</p></div>
+          <div class="parent-divider">✦</div>
+          <div class="parent-name-block"><span>MI MADRE</span><p>María Antonieta<br>Gutiérrez Vivas</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel invitation-message" id="invitacion">
+      <div class="section-index"> <span>LA INVITACIÓN</span></div>
+      <div class="section-content reveal">
+        <p class="eyebrow">CELEBREMOS JUNTOS</p>
+        <h2 class="script-heading large">¡Estás invitado!</h2>
+        <div class="ornamental-seal">XV</div>
+        <p class="paragraph narrow">Con mucha ilusión, quiero invitarte a celebrar mis quince años. Será una noche llena de alegría, amor y momentos que llevaré siempre en mi corazón.</p>
+        <p class="event-name">JASIEL SARAHI</p>
+        <div class="thin-rule"><span>✦</span></div>
+        <p class="micro-heading">19 DE DICIEMBRE · 2026 · 6:00 P. M.</p>
+      </div>
+    </section>
+
+    <section class="panel memories" id="galeria">
+      <div class="section-index"><span>MI HISTORIA</span></div>
+      <div class="section-content reveal">
+        <p class="eyebrow">UN VIAJE POR MIS RECUERDOS</p>
+        <h2 class="display-title">De niña a <em>soñadora.</em></h2>
+        <p class="paragraph narrow">Cada fotografía guarda un instante de la historia que hoy me trae hasta aquí.</p>
+        <div class="gallery-shell">
+          <button class="gallery-arrow prev" id="prevPhoto" aria-label="Fotografía anterior">‹</button>
+          <div class="gallery-window"><div class="gallery-track" id="galleryTrack">
+            <figure class="photo-frame"><img src="assets/fotos/infancia-1.jpg" alt="Fotografía de infancia de Jasiel"><figcaption>Mis primeros recuerdos</figcaption></figure>
+            <figure class="photo-frame"><img src="assets/fotos/infancia-2.jpg" alt="Fotografía de infancia de Jasiel"><figcaption>Pequeños momentos</figcaption></figure>
+            <figure class="photo-frame"><img src="assets/fotos/infancia-3.jpg" alt="Fotografía de infancia de Jasiel"><figcaption>Una historia que crece</figcaption></figure>
+            <figure class="photo-frame"><img src="assets/fotos/infancia-4.jpg" alt="Fotografía de infancia de Jasiel"><figcaption>Recuerdos para siempre</figcaption></figure>
+            <figure class="photo-frame"><img src="assets/fotos/infancia-5.jpg" alt="Fotografía de infancia de Jasiel"><figcaption>Un nuevo capítulo</figcaption></figure>
+          </div></div>
+          <button class="gallery-arrow next" id="nextPhoto" aria-label="Fotografía siguiente">›</button>
+        </div>
+
+<div class="gallery-counter">
+  <span id="currentPhoto">01</span>
+  <span class="counter-line"></span>
+  <span id="totalPhotos">05</span>
+</div>
+
+<div class="gallery-dots" id="galleryDots"></div>
+    </section>
+
+    <section class="panel note" id="mensaje">
+      <div class="section-content reveal">
+        <p class="eyebrow">PARA QUIENES QUIERO</p>
+        <h2 class="script-heading large">Para ti...</h2>
+        <p class="paragraph narrow">He aprendido que los momentos más felices se disfrutan aún más cuando los compartimos con las personas que queremos. Gracias por acompañarme y ser parte de este recuerdo que guardaré para siempre.</p>
+        <div class="thin-rule"><span>♡</span></div>
+      </div>
+    </section>
+
+    <section class="panel location" id="ubicacion">
+      <div class="section-index"><span>EL GRAN DÍA</span></div>
+      <div class="section-content reveal">
+        <p class="eyebrow">RESERVA ESTA FECHA</p>
+        <h2 class="script-heading large">Nos encontramos</h2>
+        <div class="location-date"><span>SÁBADO</span><strong>19</strong><span>DICIEMBRE<br>2026</span></div>
+        <div class="location-details">
+          <div><span class="detail-caption">HORA</span><p>6:00 p. m.</p></div>
+          <div class="silver-divider"></div>
+          <div><span class="detail-caption">UBICACIÓN</span><p>12°05'56.0"N<br>86°21'19.6"W</p></div>
+          <a class="silver-button" href="https://www.google.com/maps?q=12.0988889,-86.3554444" target="_blank" rel="noopener">VER UBICACIÓN EN MAPS ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel dresscode" id="vestimenta">
+      <div class="section-index"> <span>UNA INDICACIÓN ESPECIAL</span></div>
+      <div class="section-content reveal">
+        <p class="eyebrow">VESTIMENTA</p>
+        <h2 class="script-heading large">Dress Code</h2>
+        <div class="dress-symbol">✧</div>
+        <p class="paragraph dress-copy">Los colores <strong>azul rey y azul marino</strong> quedan reservados exclusivamente para la quinceañera y su familia.</p>
+        <p class="dress-thanks">Agradecemos tu comprensión y cariño.</p>
+      </div>
+    </section>
+
+    <section class="panel gifts" id="sobres">
+      <div class="section-index"><span>UN DETALLE DE CARIÑO</span></div>
+      <div class="section-content reveal">
+        <p class="eyebrow">SI DESEAS OBSEQUIARME ALGO</p>
+        <h2 class="script-heading large">Lluvia de sobres</h2>
+        <div class="envelope-art" aria-hidden="true">
+          <svg viewBox="0 0 220 150"><path d="M25 35h170v100H25z" fill="none" stroke="url(#silverLine)" stroke-width="2"/><path d="m27 38 83 65 83-65M27 133l62-49m104 49-62-49" fill="none" stroke="url(#silverLine)" stroke-width="2"/><path d="M84 35c0-18 12-28 26-28s26 10 26 28" fill="none" stroke="#e9edf4" stroke-width="1.5"/><path d="M102 76c-14-13-28 4 0 24 28-20 14-37 0-24Z" fill="#dce3ed"/></svg>
+        </div>
+        <p class="paragraph narrow">Tu presencia es el regalo más importante. Si deseas tener un detalle conmigo, una lluvia de sobres será recibida con muchísimo cariño.</p>
+      </div>
+    </section>
+
+    <section class="panel rsvp" id="confirmacion">
+      <div class="section-index"><span>TE ESPERO</span></div>
+      <div class="section-content reveal">
+        <p class="eyebrow">TU PRESENCIA HARÁ LA DIFERENCIA</p>
+        <h2 class="script-heading large">Confirmación</h2>
+        <p class="paragraph narrow">Espero que seas parte de esta gran celebración. Por favor, confirma tu asistencia para poder esperarte.</p>
+        <a class="silver-button confirm-button" id="whatsappLink" href="#" target="_blank" rel="noopener">CONFIRMAR ASISTENCIA ↗</a>
+        <p class="rsvp-note">Será una alegría compartir esta noche contigo.</p>
+      </div>
+    </section>
+
+    <section class="panel closing" id="cierre">
+      <div class="cover-halo"></div>
+      <div class="section-content reveal">
+        <p class="eyebrow">CON MUCHO CARIÑO</p>
+        <h2 class="script-heading closing-title">Te espero</h2>
+        <div class="crown-mark small-crown">✧</div>
+        <p class="script heroine-name">Jasiel Sarahi</p>
+        <p class="surname">VELÁSQUEZ GUTIÉRREZ</p>
+        <div class="thin-rule"><span>✦</span></div>
+        <p class="micro-heading">19 · 12 · 2026</p>
+        <p class="closing-thanks">Gracias por formar parte de mi historia.</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="music-control">
+    <button class="music-button" id="musicButton" type="button" aria-label="Reproducir música" title="Reproducir o pausar música">♫</button>
+    <audio id="bgMusic" src="assets/cancion.mp3" loop preload="metadata"></audio>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
